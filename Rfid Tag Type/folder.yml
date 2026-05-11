@@ -1,0 +1,7 @@
+info:
+  name: Rfid Tag Type
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

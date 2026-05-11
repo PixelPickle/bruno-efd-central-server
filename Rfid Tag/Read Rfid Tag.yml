@@ -1,0 +1,19 @@
+info:
+  name: Read Rfid Tag
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/rfidTag/:rfidTagId"
+  params:
+    - name: rfidTagId
+      value: "041914683E6180"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
