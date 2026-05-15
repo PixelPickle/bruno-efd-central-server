@@ -1,0 +1,19 @@
+info:
+  name: Delete Player Registration
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/playerRegistration/:playerRegistrationId"
+  params:
+    - name: playerRegistrationId
+      value: "1"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

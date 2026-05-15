@@ -1,0 +1,23 @@
+info:
+  name: Create Player Registration
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/playerRegistration"
+  body:
+    type: json
+    data: |-
+      {
+        "gameId": 1,
+        "rfidTagId": "0413B3823E6181",
+        "name": "Chicken"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
