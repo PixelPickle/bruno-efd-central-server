@@ -1,0 +1,22 @@
+info:
+  name: Read Coupon Redemption
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/couponRedemption/:gameId/:rfidTagId"
+  params:
+    - name: gameId
+      value: "1"
+      type: path
+    - name: rfidTagId
+      value: "94581046"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

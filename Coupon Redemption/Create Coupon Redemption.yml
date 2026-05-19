@@ -1,0 +1,23 @@
+info:
+  name: Create Coupon Redemption
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/couponRedemption"
+  body:
+    type: json
+    data: |-
+      {
+        "gameId": "1",
+        "rfidTagId": "94581046",
+        "playerRegistrationId": "2"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
