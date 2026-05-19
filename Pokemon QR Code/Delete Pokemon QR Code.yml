@@ -1,0 +1,19 @@
+info:
+  name: Delete Pokemon QR Code
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/pokemonQrCode/:pokemonQrCodeId"
+  params:
+    - name: pokemonQrCodeId
+      value: 4783dcc2-511f-4341-b3c0-067e1e35d851
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

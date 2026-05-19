@@ -1,0 +1,22 @@
+info:
+  name: Update Pokemon QR Code
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/pokemonQrCode/:pokemonQrCodeId"
+  params:
+    - name: pokemonQrCodeId
+      value: 4783dcc2-511f-4341-b3c0-067e1e35d851
+      type: path
+  body:
+    type: text
+    data: "15"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

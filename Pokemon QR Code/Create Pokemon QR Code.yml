@@ -1,0 +1,21 @@
+info:
+  name: Create Pokemon QR Code
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/pokemonQrCode"
+  body:
+    type: json
+    data: |-
+      {
+        "nationalDexNumber": 15
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
