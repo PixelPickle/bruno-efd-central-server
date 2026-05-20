@@ -1,0 +1,25 @@
+info:
+  name: Create Pokemon Question
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/pokemonQuestion"
+  body:
+    type: json
+    data: |-
+      {
+        "text": "What is the text?",
+        "pokemonQrCodeOne": "3f08d804-eda3-4528-9391-9cc99eae67a0",
+        "pokemonQrCodeTwo": null,
+        "pokemonQrCodeThree": null,
+        "pokemonQrCodeFour": null
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

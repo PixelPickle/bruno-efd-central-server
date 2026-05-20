@@ -1,0 +1,36 @@
+info:
+  name: Search Pokemon Question
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/pokemonQuestion"
+  params:
+    - name: TEXT
+      value: chicken
+      type: query
+      disabled: true
+    - name: POKEMONQRCODEONEID
+      value: 3f08d804-eda3-4528-9391-9cc99eae67a0
+      type: query
+      disabled: true
+    - name: POKEMONQRCODETWOID
+      value: ""
+      type: query
+      disabled: true
+    - name: POKEMONQRCODETHREEID
+      value: ""
+      type: query
+      disabled: true
+    - name: POKEMONQRCODEFOURID
+      value: ""
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

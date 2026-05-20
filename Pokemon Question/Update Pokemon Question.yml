@@ -1,0 +1,29 @@
+info:
+  name: Update Pokemon Question
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/pokemonQuestion/:id"
+  params:
+    - name: id
+      value: "1"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "text": "Chicken",
+        "pokemonQrCodeOne": "6470be06-e415-4de6-87ed-2a7ee21d45ba",
+        "pokemonQrCodeTwo": null,
+        "pokemonQrCodeThree": null,
+        "pokemonQrCodeFour": null
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
