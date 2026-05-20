@@ -1,0 +1,21 @@
+info:
+  name: Create Room
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/room"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Outside"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
