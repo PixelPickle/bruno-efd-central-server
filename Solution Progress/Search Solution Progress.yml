@@ -1,0 +1,28 @@
+info:
+  name: Search Solution Progress
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/solutionProgress"
+  params:
+    - name: SOLUTIONLIBRARYID
+      value: "2"
+      type: query
+      disabled: true
+    - name: GAMEID
+      value: "1"
+      type: query
+      disabled: true
+    - name: ISCOMPLETE
+      value: "false"
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

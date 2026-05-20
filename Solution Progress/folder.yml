@@ -1,0 +1,7 @@
+info:
+  name: Solution Progress
+  type: folder
+  seq: 15
+
+request:
+  auth: inherit
