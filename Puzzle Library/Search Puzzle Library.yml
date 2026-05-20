@@ -1,0 +1,19 @@
+info:
+  name: Search Puzzle Library
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/puzzleLibrary?NAME=puzzle name"
+  params:
+    - name: NAME
+      value: puzzle name
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
