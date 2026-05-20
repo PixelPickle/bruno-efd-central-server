@@ -14,7 +14,8 @@ http:
     type: json
     data: |-
       {
-        "name": "Chicken"
+        "name": "Chicken",
+        "roomId": 1
       }
   auth: inherit
 

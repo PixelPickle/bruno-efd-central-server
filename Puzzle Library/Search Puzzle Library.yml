@@ -5,11 +5,16 @@ info:
 
 http:
   method: GET
-  url: "{{rootUrl}}/escapeFriendsDayCentral/api/puzzleLibrary?NAME=puzzle name"
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/puzzleLibrary"
   params:
     - name: NAME
       value: puzzle name
       type: query
+      disabled: true
+    - name: ROOMID1
+      value: "1"
+      type: query
+      disabled: true
   auth: inherit
 
 settings:

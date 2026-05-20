@@ -10,7 +10,8 @@ http:
     type: json
     data: |-
       {
-        "name": "Puzzle Name"
+        "name": "Puzzle Name",
+        "roomId": 1
       }
   auth: inherit
 

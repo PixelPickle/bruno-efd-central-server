@@ -11,6 +11,10 @@ http:
       value: Chicken
       type: query
       disabled: true
+    - name: ROOMID
+      value: "1"
+      type: query
+      disabled: true
   auth: inherit
 
 settings:
