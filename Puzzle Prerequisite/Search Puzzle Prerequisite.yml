@@ -1,0 +1,28 @@
+info:
+  name: Search Puzzle Prerequisite
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/puzzlePrerequisite"
+  params:
+    - name: NAME
+      value: Something new
+      type: query
+      disabled: true
+    - name: PUZZLELIBRARYID
+      value: "2"
+      type: query
+      disabled: true
+    - name: PREREQUISITEPUZZLELIBRARYID
+      value: "2"
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

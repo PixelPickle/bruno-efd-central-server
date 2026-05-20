@@ -1,0 +1,22 @@
+info:
+  name: Read Puzzle Requirement
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/puzzleRequirement/:puzzleLibraryId/:solutionLibraryId"
+  params:
+    - name: solutionLibraryId
+      value: "2"
+      type: path
+    - name: puzzleLibraryId
+      value: "2"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: Delete Puzzle Requirement
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/puzzleRequirement/:puzzleLibraryId/:solutionLibraryId"
+  params:
+    - name: puzzleLibraryId
+      value: "2"
+      type: path
+    - name: solutionLibraryId
+      value: "2"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
