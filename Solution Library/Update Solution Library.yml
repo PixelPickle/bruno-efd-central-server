@@ -1,0 +1,25 @@
+info:
+  name: Update Solution Library
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/solutionLibrary/:id"
+  params:
+    - name: id
+      value: "1"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Different Solution"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
