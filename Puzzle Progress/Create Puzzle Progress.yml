@@ -1,0 +1,23 @@
+info:
+  name: Create Puzzle Progress
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/puzzleProgress"
+  body:
+    type: json
+    data: |-
+      {
+        "puzzleLibraryId": 2,
+        "gameId": 1,
+        "isComplete": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
