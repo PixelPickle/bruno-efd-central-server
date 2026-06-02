@@ -1,0 +1,4 @@
+name: Squirrelly-Web
+variables:
+  - name: rootUrl
+    value: http://squirrelly-app.com
