@@ -10,8 +10,9 @@ http:
     type: json
     data: |-
       {
-        "text": "What is the text?",
-        "pokemonQrCodeOne": "3f08d804-eda3-4528-9391-9cc99eae67a0",
+        "text": "This Pokémon currently holds the spot at the end of the National PokéDex, as the Last Pokémon.",
+        "roomId": 1,
+        "pokemonQrCodeOne": "8b49e74a-aee1-4efe-ad3c-b92209fd8caa",
         "pokemonQrCodeTwo": null,
         "pokemonQrCodeThree": null,
         "pokemonQrCodeFour": null

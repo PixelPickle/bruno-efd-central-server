@@ -1,22 +1,18 @@
 info:
-  name: Update Game
+  name: Update Game Status
   type: http
-  seq: 3
+  seq: 6
 
 http:
   method: PUT
-  url: "{{rootUrl}}/escapeFriendsDayCentral/api/game/:gameId"
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/game/:gameId/gameStatus"
   params:
     - name: gameId
       value: "3"
       type: path
   body:
-    type: json
-    data: |-
-      {
-        "gameStatusId": "2",
-        "roomId": 1
-      }
+    type: text
+    data: "1"
   auth: inherit
 
 settings:

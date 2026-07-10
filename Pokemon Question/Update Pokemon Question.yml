@@ -15,6 +15,7 @@ http:
     data: |-
       {
         "text": "Chicken",
+        "roomId": 1,
         "pokemonQrCodeOne": "6470be06-e415-4de6-87ed-2a7ee21d45ba",
         "pokemonQrCodeTwo": null,
         "pokemonQrCodeThree": null,

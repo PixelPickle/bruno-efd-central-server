@@ -10,7 +10,8 @@ http:
     type: json
     data: |-
       {
-        "nationalDexNumber": 15
+        "nationalDexNumber": 1025,
+        "roomId": "1"
       }
   auth: inherit
 

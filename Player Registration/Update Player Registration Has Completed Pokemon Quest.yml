@@ -1,0 +1,22 @@
+info:
+  name: Update Player Registration Has Completed Pokemon Quest
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/playerRegistration/:playerRegistrationId/hasCompletedPokemonQuest"
+  params:
+    - name: playerRegistrationId
+      value: "3"
+      type: path
+  body:
+    type: text
+    data: "true"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

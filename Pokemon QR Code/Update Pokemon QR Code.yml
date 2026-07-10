@@ -8,11 +8,15 @@ http:
   url: "{{rootUrl}}/escapeFriendsDayCentral/api/pokemonQrCode/:pokemonQrCodeId"
   params:
     - name: pokemonQrCodeId
-      value: 4783dcc2-511f-4341-b3c0-067e1e35d851
+      value: f1e4881d-f6a3-47e5-8a2a-67042d20fc45
       type: path
   body:
-    type: text
-    data: "15"
+    type: json
+    data: |-
+      {
+        "nationalDexNumber": "311",
+        "roomId": "1"
+      }
   auth: inherit
 
 settings:

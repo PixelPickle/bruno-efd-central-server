@@ -1,0 +1,22 @@
+info:
+  name: Game Submit 2FA
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{rootUrl}}/escapeFriendsDayCentral/api/game/:gameId/2fa"
+  params:
+    - name: gameId
+      value: "1"
+      type: path
+  body:
+    type: text
+    data: "706757"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
